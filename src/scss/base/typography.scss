@@ -1,0 +1,48 @@
+//NAVBAR
+h1, h2, a {
+    color: black;
+}
+
+h2, .nav-links, h1 {
+    font-family: $monts;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: $medium;
+}
+
+.nav-links {
+        font-family: $outfit;
+        font-size: 1.7rem;
+        font-weight: $light;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: $secondaryCol;
+            font-weight: bold;
+
+        }
+    }
+
+li {
+    list-style-type: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+//HERO
+.hero-container {
+    text-align: center;
+
+    h1 {
+        font-size: 9.6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: $regular;
+    }
+}

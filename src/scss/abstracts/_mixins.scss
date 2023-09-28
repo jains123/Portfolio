@@ -1,0 +1,17 @@
+//FLEXBOX
+
+@mixin flexbox {
+    display: flex;
+}
+
+@mixin flexbox-c-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexbox-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
