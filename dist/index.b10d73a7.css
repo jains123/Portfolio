@@ -88,6 +88,17 @@ header ul li:nth-child(3) {
   position: relative;
 }
 
+.projects-container {
+  border: 1px solid red;
+  height: 70vh;
+}
+
+.projects-container .projects-title-container {
+  text-align: center;
+  width: 40rem;
+  margin: auto;
+}
+
 h1, h2, a {
   color: #000;
 }
