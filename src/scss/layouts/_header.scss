@@ -2,7 +2,8 @@
 
 header {
     height: 5.7rem;
-    padding: 3rem 5%;
+    padding: 0 5%;
+    margin: 2rem 0;
     @include flexbox-c-sb;
 
     ul {

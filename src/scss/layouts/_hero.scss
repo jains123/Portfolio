@@ -2,7 +2,7 @@
 
 .hero-container {
     // border: solid 1px red;
-    height: 100vh;
+    min-height: 700px;
     @include flexbox-c-c;
 
     h1 {
