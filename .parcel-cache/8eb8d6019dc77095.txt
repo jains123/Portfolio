@@ -1,4 +1,4 @@
-6544
+6545
 51C:\Projects\portfolio\node_modules\is-glob\index.js133403717906304432 0
 68C:\Projects\portfolio\node_modules\semver\functions\compare-loose.js133403729108119845 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\BM.js133403729150255242 0
@@ -16,7 +16,7 @@
 62C:\Projects\portfolio\node_modules\fs-extra\lib\ensure\link.js133403951433476598 0
 57C:\Projects\portfolio\src\scss\layouts\__layouts-dir.scss133404792218845051 0
 53C:\Projects\portfolio\node_modules\fill-range\LICENSE133403717906522603 0
-26C:\Projects\portfolio\dist133404811896397751 1
+26C:\Projects\portfolio\dist133408200069422465 1
 75C:\Projects\portfolio\node_modules\caniuse-lite\data\features\web-serial.js133403729193814101 0
 83C:\Projects\portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\bin133403729097955872 1
 89C:\Projects\portfolio\node_modules\lmdb\node_modules\node-addon-api\napi-inl.deprecated.h133403729135382990 0
@@ -38,7 +38,7 @@
 76C:\Projects\portfolio\node_modules\caniuse-lite\data\features\css-opacity.js133403729169711075 0
 100C:\Projects\portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\replace\property133403729126564833 1
 52C:\Projects\portfolio\node_modules\svgo\lib\types.ts133403729154717810 0
-51C:\Projects\portfolio\src\scss\base\typography.scss133404008462726830 0
+51C:\Projects\portfolio\src\scss\base\typography.scss133408123428997428 0
 81C:\Projects\portfolio\node_modules\css-select\node_modules\entities\lib\escape.js133403729142453361 0
 25C:\Projects\portfolio\src133404806481914575 1
 58C:\Projects\portfolio\node_modules\@parcel\packager-js\lib133403729134055988 1
@@ -46,14 +46,14 @@
 39C:\Projects\portfolio\node_modules\.bin133403951436999160 1
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\TR.js133403729192405920 0
 67C:\Projects\portfolio\node_modules\node-gyp-build-optional-packages133403729106386758 1
-36C:\Projects\portfolio\src\index.html133404810383807983 0
-36C:\Projects\portfolio\src\project.js133404807189816954 0
+36C:\Projects\portfolio\src\index.html133408199657698169 0
+36C:\Projects\portfolio\src\project.js133407329810563348 0
 30C:\Projects\portfolio\src\scss133403753086983039 1
 53C:\Projects\portfolio\node_modules\readdirp\README.md133403717906924684 0
 101C:\Projects\portfolio\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\collapseGroups.js133403729115630902 0
 41C:\Projects\portfolio\node_modules\globby133403951431643365 1
 40C:\Projects\portfolio\src\scss\abstracts133403836548575507 1
-51C:\Projects\portfolio\src\scss\layouts\_footer.scss133403748471840810 0
+51C:\Projects\portfolio\src\scss\layouts\_footer.scss133408195546377678 0
 93C:\Projects\portfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\atrule\font-face.cjs133403729151322227 0
 70C:\Projects\portfolio\node_modules\dom-serializer\lib\esm\package.json133403729106609140 0
 53C:\Projects\portfolio\node_modules\css-select\LICENSE133403729096089050 0
@@ -72,10 +72,10 @@
 88C:\Projects\portfolio\node_modules\@swc\helpers\src\_class_private_field_destructure.mjs133403729178897710 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\MC.js133403729185156572 0
 43C:\Projects\portfolio\node_modules\readdirp133403717907018272 1
-40C:\Projects\portfolio\src\scss\main.scss133403833664090400 0
+40C:\Projects\portfolio\src\scss\main.scss133408151403280362 0
 77C:\Projects\portfolio\node_modules\entities\lib\generated\decode-data-html.js133403729103231171 0
 74C:\Projects\portfolio\node_modules\caniuse-lite\data\features\objectrtc.js133403729187712246 0
-50C:\Projects\portfolio\src\scss\layouts\_about.scss133404039790094059 0
+50C:\Projects\portfolio\src\scss\layouts\_about.scss133408200337991965 0
 79C:\Projects\portfolio\node_modules\caniuse-lite\data\features\filereadersync.js133403729177372970 0
 59C:\Projects\portfolio\node_modules\semver\internal\debug.js133403729111573751 0
 54C:\Projects\portfolio\node_modules\regenerator-runtime133403729105793089 1
@@ -97,7 +97,7 @@
 47C:\Projects\portfolio\node_modules\async\map.js133403951435154684 0
 68C:\Projects\portfolio\node_modules\css-select\lib\esm\general.js.map133403729137732312 0
 74C:\Projects\portfolio\node_modules\email-addresses\test\email-addresses.js133403951432516338 0
-52C:\Projects\portfolio\src\scss\layouts\_project.scss133404812527278926 0
+52C:\Projects\portfolio\src\scss\layouts\_project.scss133408151841441283 0
 56C:\Projects\portfolio\node_modules\p-locate\package.json133403951430299432 0
 59C:\Projects\portfolio\node_modules\csso\cjs\replace\Url.cjs133403729132880121 0
 51C:\Projects\portfolio\src\scss\base\__base-dir.scss133403753653275508 0
@@ -129,7 +129,7 @@
 54C:\Projects\portfolio\node_modules\srcset\package.json133403729102624637 0
 90C:\Projects\portfolio\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt133403729165799379 0
 61C:\Projects\portfolio\node_modules\js-yaml\lib\schema\json.js133403729118177194 0
-53C:\Projects\portfolio\src\scss\abstracts\_mixins.scss133404011540942396 0
+53C:\Projects\portfolio\src\scss\abstracts\_mixins.scss133407297086128955 0
 87C:\Projects\portfolio\node_modules\dom-serializer\node_modules\entities\lib\decode.d.ts133403729115955520 0
 58C:\Projects\portfolio\node_modules\semver\functions\cmp.js133403729101655372 0
 64C:\Projects\portfolio\node_modules\svgo\plugins\removeViewBox.js133403729146220220 0
@@ -141,7 +141,7 @@
 53C:\Projects\portfolio\node_modules\chrome-trace-event133403729109416088 1
 61C:\Projects\portfolio\node_modules\color-convert\package.json133403729095923833 0
 66C:\Projects\portfolio\node_modules\type-fest\ts41\pascal-case.d.ts133403729123704898 0
-56C:\Projects\portfolio\src\scss\abstracts\_variables.scss133403852411044024 0
+56C:\Projects\portfolio\src\scss\abstracts\_variables.scss133407341304630470 0
 72C:\Projects\portfolio\node_modules\@swc\helpers\_\_to_array\package.json133403729176731219 0
 58C:\Projects\portfolio\node_modules\@swc\types\package.json133403729101501426 0
 87C:\Projects\portfolio\node_modules\dom-serializer\node_modules\entities\lib\encode.d.ts133403729116518132 0
@@ -1593,7 +1593,7 @@
 58C:\Projects\portfolio\node_modules\semver\functions\neq.js133403729124116116 0
 60C:\Projects\portfolio\node_modules\semver\functions\parse.js133403729125973090 0
 60C:\Projects\portfolio\node_modules\semver\functions\patch.js133403729126728414 0
-48C:\Projects\portfolio\dist\portfolio.59712999.js133404810706726421 0
+48C:\Projects\portfolio\dist\portfolio.59712999.js133408199838128886 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\JM.js133403729182957145 0
 85C:\Projects\portfolio\node_modules\dom-serializer\node_modules\entities\lib\decode.js133403729100071096 0
 76C:\Projects\portfolio\node_modules\lmdb\node_modules\node-addon-api\index.js133403729142953644 0
@@ -1905,7 +1905,7 @@
 52C:\Projects\portfolio\node_modules\json5\lib\util.js133403729112021151 0
 74C:\Projects\portfolio\node_modules\caniuse-lite\data\features\clipboard.js133403729158625522 0
 58C:\Projects\portfolio\node_modules\async\dist\async.min.js133403951433511522 0
-44C:\Projects\portfolio\dist\index.87913a0c.js133404810706726421 0
+44C:\Projects\portfolio\dist\index.87913a0c.js133408199838128886 0
 103C:\Projects\portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\attributes.js133403729101400206 0
 57C:\Projects\portfolio\node_modules\picomatch\lib\parse.js133403717907001861 0
 71C:\Projects\portfolio\node_modules\ordered-binary\assets\powers-dre.png133403729113588084 0
@@ -4344,6 +4344,7 @@
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\GR.js133403729179663916 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\HK.js133403729180200052 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\HN.js133403729180257402 0
+61C:\Projects\portfolio\dist\portfolio.59712999.js.map.13360.17133407355424947769 0
 73C:\Projects\portfolio\node_modules\@swc\helpers\cjs\_array_with_holes.cjs133403729111057728 0
 66C:\Projects\portfolio\node_modules\caniuse-lite\data\regions\HR.js133403729180285965 0
 75C:\Projects\portfolio\node_modules\caniuse-lite\data\features\css-resize.js133403729171017483 0
@@ -6506,7 +6507,7 @@
 76C:\Projects\portfolio\node_modules\.bin\node-gyp-build-optional-packages.cmd133403729313632908 0
 76C:\Projects\portfolio\node_modules\.bin\node-gyp-build-optional-packages.ps1133403729313632908 0
 50C:\Projects\portfolio\node_modules\.bin\parcel.cmd133403729313646957 0
-49C:\Projects\portfolio\dist\index.b10d73a7.css.map133404811896376708 0
+49C:\Projects\portfolio\dist\index.b10d73a7.css.map133408200069406684 0
 46C:\Projects\portfolio\node_modules\.bin\parser133403728421592117 0
 52C:\Projects\portfolio\node_modules\.bin\purgecss.cmd133403728421670312 0
 52C:\Projects\portfolio\node_modules\.bin\purgecss.ps1133403728421670312 0
@@ -6537,9 +6538,9 @@
 66C:\Projects\portfolio\node_modules\.bin\update-browserslist-db.ps1133403729313657167 0
 44C:\Projects\portfolio\node_modules\.bin\uuid133403728421712305 0
 48C:\Projects\portfolio\node_modules\.bin\uuid.cmd133403728421712305 0
-48C:\Projects\portfolio\dist\index.87913a0c.js.map133404810706955231 0
-45C:\Projects\portfolio\dist\index.b10d73a7.css133404811896299251 0
+48C:\Projects\portfolio\dist\index.87913a0c.js.map133408199838220707 0
+45C:\Projects\portfolio\dist\index.b10d73a7.css133408200069277118 0
 45C:\Projects\portfolio\dist\index.f191f3a7.css133403950224012375 0
 49C:\Projects\portfolio\dist\index.f191f3a7.css.map133403950224152638 0
-37C:\Projects\portfolio\dist\index.html133404810707147180 0
-52C:\Projects\portfolio\dist\portfolio.59712999.js.map133404810706955231 0
+37C:\Projects\portfolio\dist\index.html133408199837754679 0
+52C:\Projects\portfolio\dist\portfolio.59712999.js.map133408199838220707 0

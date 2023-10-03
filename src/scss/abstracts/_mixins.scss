@@ -21,3 +21,10 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@mixin flexbox-sa-sa {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}

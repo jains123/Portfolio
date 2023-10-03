@@ -8,15 +8,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: $textCol;
 }
 
 
 html {
     font-size: 62.5%;
-
+    
     body {
         background-color: $primaryCol;
-        max-width: 1440px;
+        // max-width: 1440px;
         margin: 0 auto;
+        overflow-x: hidden;
+        
     }
+}
+
+::selection {
+    background: $secondaryCol;
 }
