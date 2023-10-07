@@ -182,10 +182,40 @@ header ul li:nth-child(3) {
   margin-top: 1.75rem;
 }
 
+.projects-container .project .info div {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.projects-container .project .info div button {
+  cursor: pointer;
+  background-color: #66b6ff;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  margin: 2rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  display: flex;
+  box-shadow: 0 7px 29px #64646f33;
+}
+
+.projects-container .project .info div button:hover {
+  border: 1px solid #000;
+  transform: translateY(-5px);
+}
+
 .projects-container .project .image {
   border: 1px solid red;
   flex: 1;
+  place-items: center;
   height: 400px;
+  display: grid;
 }
 
 h1, h2, a {
@@ -233,6 +263,7 @@ li {
 }
 
 a {
+  font-family: Outfit, sans-serif;
   text-decoration: none;
 }
 
