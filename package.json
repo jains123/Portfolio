@@ -1,20 +1,23 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A portfolio to show off my personal web dev projects",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build --no-minify src/index.html -d public",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jamie Ainsworth",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
+    "cssnano": "^4.1.11",
     "gh-pages": "^6.0.0",
+    "node-sass": "^9.0.0",
     "parcel": "^2.9.3",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.68.0"
   }
 }

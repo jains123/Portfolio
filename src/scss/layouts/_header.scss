@@ -9,6 +9,7 @@ header {
 
     ul {
         @include flexbox;
+        display: none;
         li {
             @include flexbox;
 
@@ -19,6 +20,19 @@ header {
             &:nth-child(3) {
                 padding-left: 6rem;
             }
+        }
+    }
+
+    .burger {
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+        // display: none;
+        @include grid-center;
+        div {
+            background-color: black;
+            height: 3px;
+            width: 100%;
         }
     }
 }
