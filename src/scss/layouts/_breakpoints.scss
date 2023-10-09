@@ -1,0 +1,78 @@
+@media screen and (max-width: $mediumScreen) {
+    //HEADER
+    nav {
+        ul {
+            display: none;
+        }
+
+        .burger {
+            @include grid-center;
+        }
+    }
+
+    .skill-icons-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: $smallScreen) {
+    .hero-container {  
+        min-height: 90vh;
+        div {
+            h1 {
+                font-size: 8rem;
+            }
+        }
+    }
+
+    .about-container {
+        flex-direction: column;
+
+        .about-bio-container {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 466px) {
+    header {
+        padding: 0 2rem;
+
+        .logo {
+            font-size: 2.2rem;
+        }
+
+    }
+
+    .hero-container div h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .hero-container div h1 {
+        font-size: 5rem;
+    }
+
+    .hero-container div h2 {
+        font-size: 3rem;
+    }
+
+    .about-container {
+
+        .about-bio-container {
+            padding: 4rem 0;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
