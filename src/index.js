@@ -1,19 +1,20 @@
-const burgerButton = document.querySelector('.burger');
 const mobMenu = document.querySelector('.mob-menu');
-const closeBtn = document.querySelector('.x');
-const main = document.querySelector('main');
-const header = document.querySelector('header');
+const burgerBack = document.querySelector('.burger-back');
+const burgerButton = document.querySelector('.burger');
+const l1 = document.querySelector('.line1');
+const l2 = document.querySelector('.line2');
+const l3 = document.querySelector('.line3');
 
 
 burgerButton.addEventListener('click', () => {
-    mobMenu.classList.toggle('active');
-    main.style.opacity = 0.33;
-    header.style.opacity = 0.33;
+    l1.classList.toggle('rotate-top');
+    l2.classList.toggle('opaque');
+    l3.classList.toggle('rotate-bottom');
+
+    burgerBack.classList.toggle('burger-back-active');
+    setTimeout(function() {
+        mobMenu.classList.toggle('active');
+      }, 200);
 });
 
-closeBtn.addEventListener('click', () => {
-    mobMenu.classList.toggle('active');
-    main.style.opacity = 1; 
-    header.style.opacity = 1;
-});
 
