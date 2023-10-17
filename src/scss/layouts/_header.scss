@@ -1,5 +1,6 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
+
 header {
     height: 5.7rem;
     max-width: 1400px;
@@ -21,19 +22,22 @@ header {
                 padding-left: 6rem;
             }
         }
-    }
+    } 
     
     .burger-back { 
-        background-color: $secondaryCol;
+        display: none;
         border-radius: 50px;
         transition: 0.3s ease-in-out;
         height: 42px;
         width: 42px;
         transform: scale(1);
-        display: none;
-        position: fixed;
-        top: 2.2%;
-        right: 2.2%;
+        position: absolute;
+        top: 2.7em;
+        right: 3%;
+        background-color: $secondaryCol;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
     }
 
     .burger-back-active {
@@ -41,15 +45,16 @@ header {
     }
 
     .burger {
-        position: fixed;
-        top: 2.2%;
-        right: 2.2%;
+        position: absolute;
+        top: 2.7em;
+        right: 3%;
         height: 42px;
         width: 42px;
         display: none;
         cursor: pointer;
         padding: .8rem;
         border-radius: 50px;
+        transition: 0.3s ease-in-out;
     
         div {
             background-color: white;

@@ -16,28 +16,30 @@ header {
       header ul li:nth-child(3) {
         padding-left: 6rem; }
   header .burger-back {
-    background-color: #66B6FF;
+    display: none;
     border-radius: 50px;
     transition: 0.3s ease-in-out;
     height: 42px;
     width: 42px;
     transform: scale(1);
-    display: none;
-    position: fixed;
-    top: 2.2%;
-    right: 2.2%; }
+    position: absolute;
+    top: 2.7em;
+    right: 3%;
+    background-color: #66B6FF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   header .burger-back-active {
     transform: scale(100) !important; }
   header .burger {
-    position: fixed;
-    top: 2.2%;
-    right: 2.2%;
+    position: absolute;
+    top: 2.7em;
+    right: 3%;
     height: 42px;
     width: 42px;
     display: none;
     cursor: pointer;
     padding: .8rem;
-    border-radius: 50px; }
+    border-radius: 50px;
+    transition: 0.3s ease-in-out; }
     header .burger div {
       background-color: white;
       height: 3px;
@@ -147,7 +149,6 @@ header {
     display: flex;
     width: 100%;
     border-radius: 20px;
-    height: 45.7rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
     .projects-container .project:nth-child(2), .projects-container .project:nth-child(3) {
       margin-bottom: 10rem; }
@@ -184,20 +185,31 @@ header {
     .projects-container .project .image {
       flex: 1;
       height: 400px;
+      margin: auto 0;
       display: grid;
       place-items: center; }
+      .projects-container .project .image img {
+        width: 100%; }
+
+@media screen and (max-width: 1200px) {
+  .projects-container {
+    padding: 0 5%; } }
 
 @media screen and (max-width: 768px) {
   nav ul {
     display: none; }
   nav .burger {
     display: grid;
-    place-items: center; }
+    place-items: center;
+    top: 2.7em; }
   nav .burger-back {
     display: block; }
   .skill-icons-container {
     width: 90%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .project {
+    flex-direction: column;
+    height: auto; } }
 
 @media screen and (max-width: 576px) {
   .hero-container {
@@ -209,7 +221,23 @@ header {
     .about-container .about-bio-container {
       width: 70%; } }
 
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 425px) {
+  header {
+    margin: 1rem auto;
+    padding: 0 2rem; }
+    header .burger-back {
+      top: 2.2%; }
+    header .burger {
+      top: 2.2%; }
+  main .hero-container h1 {
+    font-size: 7rem; }
+  main .hero-container h2 {
+    font-size: 3rem; }
+  main .about-container .about-bio-container {
+    padding: 5rem 0;
+    width: 85%; } }
+
+@media screen and (max-width: 391px) {
   header {
     padding: 0 2rem; }
     header .logo {
@@ -221,12 +249,14 @@ header {
   header {
     padding: 0 1rem;
     margin: 1rem auto; }
+    header .burger-back {
+      top: 2.2%; }
   .hero-container div h1 {
     font-size: 5rem; }
   .hero-container div h2 {
     font-size: 3rem; }
   .about-container .about-bio-container {
-    padding: 1rem 0; }
+    padding: 1rem 0 !important; }
     .about-container .about-bio-container p {
       text-align: center; } }
 
@@ -322,6 +352,7 @@ a {
   .hero-container h1 {
     font-size: 9.6rem; }
 
+@use "./abstracts/variables";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -337,6 +368,10 @@ html {
 
 ::selection {
   background: #66B6FF; }
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #282828; } }
 
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -124,10 +124,16 @@ var burgerButton = document.querySelector('.burger');
 var l1 = document.querySelector('.line1');
 var l2 = document.querySelector('.line2');
 var l3 = document.querySelector('.line3');
+var body = document.querySelector('body');
 burgerButton.addEventListener('click', function () {
   l1.classList.toggle('rotate-top');
   l2.classList.toggle('opaque');
   l3.classList.toggle('rotate-bottom');
+  if (body.style.overflow === 'hidden') {
+    body.style.overflow = 'auto';
+  } else {
+    body.style.overflow = 'hidden';
+  }
   burgerBack.classList.toggle('burger-back-active');
   setTimeout(function () {
     mobMenu.classList.toggle('active');
@@ -158,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59584" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

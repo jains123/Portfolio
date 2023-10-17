@@ -1,8 +1,10 @@
-//COLORS
+//COLORS - LIGHT MODE
 $primaryCol: #FBFBFB;
 $secondaryCol: #66B6FF;
 $textCol: #242424;
 
+//COLORS - DARK MODE
+$darkPrimaryCol: #282828;
 //FONTS
 $monts: 'Montserrat', sans-serif;  
 $outfit: 'Outfit', sans-serif;  
@@ -15,6 +17,7 @@ $semiBold: 600;
 $bold: 700;
 
 //BREAKPOINTS 
+$extraSmallScreen: 425px;
 $smallScreen: 576px;
 $mediumScreen: 768px;
 $largeScreen: 992px;
