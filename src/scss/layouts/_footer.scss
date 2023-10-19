@@ -3,7 +3,8 @@
     height: 34.8rem;
     background-color: $secondaryCol;
     @include flexbox-c-c;
-
+    margin-top: 5rem;
+    
     .footer-info {
         text-align: center;
 

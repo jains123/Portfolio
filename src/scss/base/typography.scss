@@ -22,6 +22,14 @@ p, h3 {
     font-size: 2rem;
 }
 
+p {
+    font-weight: $light;
+}
+
+.dark-mode-text {
+    color: #fff !important;
+}
+
 
 
 .logo {

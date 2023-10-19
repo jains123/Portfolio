@@ -125,6 +125,7 @@ var l1 = document.querySelector('.line1');
 var l2 = document.querySelector('.line2');
 var l3 = document.querySelector('.line3');
 var body = document.querySelector('body');
+console.log(textElements);
 burgerButton.addEventListener('click', function () {
   l1.classList.toggle('rotate-top');
   l2.classList.toggle('opaque');
@@ -139,6 +140,34 @@ burgerButton.addEventListener('click', function () {
     mobMenu.classList.toggle('active');
   }, 200);
 });
+var textElements = document.querySelectorAll('*:not(:empty)');
+var darkMode = document.querySelector('input');
+var icons = document.querySelectorAll('i');
+console.log(icons);
+function darkModeToggle(event) {
+  if (event.target.checked) {
+    for (var i = 0; i < textElements.length; i++) {
+      var element = textElements[i];
+      element.classList.toggle('dark-mode-text');
+      body.classList.toggle('dark-mode-body');
+    }
+    for (var i = 0; i < icons.length; i++) {
+      var icon = icons[i];
+      icon.classList.toggle('dark-mode-text');
+    }
+  } else {
+    for (var i = 0; i < textElements.length; i++) {
+      var _element = textElements[i];
+      _element.classList.toggle('dark-mode-text');
+      body.classList.toggle('dark-mode-body');
+    }
+    for (var i = 0; i < icons.length; i++) {
+      var _icon = icons[i];
+      _icon.classList.toggle('dark-mode-text');
+    }
+  }
+}
+darkMode.addEventListener("change", darkModeToggle);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -164,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59584" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59464" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

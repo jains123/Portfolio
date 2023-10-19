@@ -35,13 +35,14 @@
                 height: 100%;
                 @include flexbox-sa-sa;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 6em;
+                
                 li {
                     height: 8rem;
                     width: 8rem;
-                   
-
                     @include flexbox-c-c;
+                    flex-direction: column;
+                    text-align: center;
 
                     i  {
                         font-size: 8rem;
