@@ -118,14 +118,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+//MOBILE NAV
 var mobMenu = document.querySelector('.mob-menu');
 var burgerBack = document.querySelector('.burger-back');
 var burgerButton = document.querySelector('.burger');
+var title = document.querySelector('title');
 var l1 = document.querySelector('.line1');
 var l2 = document.querySelector('.line2');
 var l3 = document.querySelector('.line3');
-var body = document.querySelector('body');
-console.log(textElements);
 burgerButton.addEventListener('click', function () {
   l1.classList.toggle('rotate-top');
   l2.classList.toggle('opaque');
@@ -140,34 +140,52 @@ burgerButton.addEventListener('click', function () {
     mobMenu.classList.toggle('active');
   }, 200);
 });
+
+//DARK MODE 
+var body = document.querySelector('body');
 var textElements = document.querySelectorAll('*:not(:empty)');
 var darkMode = document.querySelector('input');
 var icons = document.querySelectorAll('i');
-console.log(icons);
 function darkModeToggle(event) {
   if (event.target.checked) {
+    body.classList.toggle('dark-mode-body');
     for (var i = 0; i < textElements.length; i++) {
       var element = textElements[i];
       element.classList.toggle('dark-mode-text');
-      body.classList.toggle('dark-mode-body');
     }
     for (var i = 0; i < icons.length; i++) {
       var icon = icons[i];
       icon.classList.toggle('dark-mode-text');
     }
+    localStorage.setItem('darkMode', 'true');
+    console.log(localStorage.getItem('darkMode'));
   } else {
+    body.classList.toggle('dark-mode-body');
     for (var i = 0; i < textElements.length; i++) {
       var _element = textElements[i];
       _element.classList.toggle('dark-mode-text');
-      body.classList.toggle('dark-mode-body');
     }
     for (var i = 0; i < icons.length; i++) {
       var _icon = icons[i];
       _icon.classList.toggle('dark-mode-text');
     }
+    localStorage.setItem('darkMode', false);
+    console.log(localStorage.getItem('darkMode'));
   }
 }
 darkMode.addEventListener("change", darkModeToggle);
+var darkModeStartUp = function darkModeStartUp() {
+  if (localStorage.getItem('darkMode') == 'true') {
+    console.log('firing');
+    darkMode.checked = true;
+  } else if (localStorage.getItem('darkMode') == 'false') {
+    darkMode.checked = false;
+    localStorage.setItem('darkMode', 'false');
+  }
+  ;
+};
+darkModeStartUp();
+console.log(localStorage.getItem('darkMode'));
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -193,7 +211,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59464" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56393" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

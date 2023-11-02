@@ -26,11 +26,12 @@
                 margin-left: 3rem;
             }
             
-            svg {
-                height: 100%;
+            i {
+                font-size: 3.4rem;
+                transition: 0.2s ease-in-out;
             }
 
-            svg:hover {
+            i:hover {
                 color: $secondaryCol;
             }
         }  

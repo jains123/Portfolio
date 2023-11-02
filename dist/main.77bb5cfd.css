@@ -134,9 +134,10 @@ header {
         margin-right: 3rem; }
       .hero-container .social-logs-container .social-logs:nth-child(2) {
         margin-left: 3rem; }
-      .hero-container .social-logs-container .social-logs svg {
-        height: 100%; }
-      .hero-container .social-logs-container .social-logs svg:hover {
+      .hero-container .social-logs-container .social-logs i {
+        font-size: 3.4rem;
+        transition: 0.2s ease-in-out; }
+      .hero-container .social-logs-container .social-logs i:hover {
         color: #66B6FF; }
 
 .about-container {
@@ -380,7 +381,8 @@ p {
   font-weight: 300; }
 
 .dark-mode-text {
-  color: #fff !important; }
+  color: #fff !important;
+  transition: 0.3s ease-in-out; }
 
 .logo {
   font-size: 2.8rem;
