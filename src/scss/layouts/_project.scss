@@ -9,8 +9,18 @@
         margin-bottom: 5rem;
     }
 
+    .project-on-load {
+        position: static !important;
+        right: 0 !important;
+        opacity: 1 !important;
+    }
+
     .project {
         @include flexbox;
+        position: absolute;
+        right: -100%;
+        opacity: .1;
+        transition: 0.3s ease-in-out;
         width: 100%;
         border-radius: 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

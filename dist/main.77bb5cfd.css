@@ -2,7 +2,7 @@
 header {
   height: 5.7rem;
   max-width: 1400px;
-  padding: 0 4rem;
+  padding: 0 3%;
   margin: 2rem auto;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ header {
   .about-container .about-bio-container {
     flex: 1;
     margin: auto 4rem;
-    padding: 10rem 0;
+    padding: 8rem 0;
     width: 40%; }
     .about-container .about-bio-container h3 {
       margin-bottom: 2rem; }
@@ -196,8 +196,16 @@ header {
   flex-direction: column; }
   .projects-container h2 {
     margin-bottom: 5rem; }
+  .projects-container .project-on-load {
+    position: static !important;
+    right: 0 !important;
+    opacity: 1 !important; }
   .projects-container .project {
     display: flex;
+    position: absolute;
+    right: -100%;
+    opacity: .1;
+    transition: 0.3s ease-in-out;
     width: 100%;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
@@ -286,6 +294,10 @@ header {
   main .about-container .about-bio-container {
     padding: 5rem 0;
     width: 85%; } }
+
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 6rem; } }
 
 @media screen and (max-width: 391px) {
   header {
@@ -427,7 +439,11 @@ html {
   background: #66B6FF; }
 
 .dark-mode-body {
-  background-color: #262626; }
+  background-color: #202c37; }
+
+.dark-mode-elements {
+  background-color: #2b3945;
+  box-shadow: none !important; }
 
 @media screen and (prefers-color-scheme: dark) {
   body {

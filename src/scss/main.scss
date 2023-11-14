@@ -28,7 +28,12 @@ html {
 }
 
 .dark-mode-body {
-    background-color: $darkPrimaryCol;
+    background-color: $darkModeBackground;
+}
+
+.dark-mode-elements {
+    background-color: $darkModeElements;
+    box-shadow: none !important;
 }
 
 @media screen and (prefers-color-scheme: dark) {

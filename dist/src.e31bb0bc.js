@@ -146,6 +146,8 @@ var body = document.querySelector('body');
 var textElements = document.querySelectorAll('*:not(:empty)');
 var darkMode = document.querySelector('input');
 var icons = document.querySelectorAll('i');
+var projects = document.getElementsByClassName('project');
+var projectsArray = Array.from(projects);
 function darkModeToggle(event) {
   if (event.target.checked) {
     body.classList.toggle('dark-mode-body');
@@ -153,39 +155,46 @@ function darkModeToggle(event) {
       var element = textElements[i];
       element.classList.toggle('dark-mode-text');
     }
+    projectsArray.forEach(function (project) {
+      project.classList.toggle('dark-mode-elements');
+    });
     for (var i = 0; i < icons.length; i++) {
       var icon = icons[i];
       icon.classList.toggle('dark-mode-text');
     }
     localStorage.setItem('darkMode', 'true');
-    console.log(localStorage.getItem('darkMode'));
   } else {
     body.classList.toggle('dark-mode-body');
     for (var i = 0; i < textElements.length; i++) {
       var _element = textElements[i];
       _element.classList.toggle('dark-mode-text');
     }
+    projectsArray.forEach(function (project) {
+      project.classList.toggle('dark-mode-elements');
+    });
     for (var i = 0; i < icons.length; i++) {
       var _icon = icons[i];
       _icon.classList.toggle('dark-mode-text');
     }
     localStorage.setItem('darkMode', false);
-    console.log(localStorage.getItem('darkMode'));
   }
 }
 darkMode.addEventListener("change", darkModeToggle);
 var darkModeStartUp = function darkModeStartUp() {
   if (localStorage.getItem('darkMode') == 'true') {
-    console.log('firing');
     darkMode.checked = true;
+    darkMode.dispatchEvent(new Event('change'));
   } else if (localStorage.getItem('darkMode') == 'false') {
     darkMode.checked = false;
     localStorage.setItem('darkMode', 'false');
   }
-  ;
 };
 darkModeStartUp();
-console.log(localStorage.getItem('darkMode'));
+var fadeIn = function fadeIn() {
+  projectsArray.forEach(function (project) {
+    project.classList.toggle('project-on-load');
+  });
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -211,7 +220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56393" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61856" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
