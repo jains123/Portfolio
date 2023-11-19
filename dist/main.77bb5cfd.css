@@ -73,7 +73,7 @@ header {
     top: 2.7em;
     right: 3%;
     background-color: #66B6FF;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02); }
   header .burger-back-active {
     transform: scale(100) !important; }
   header .burger {
@@ -136,7 +136,7 @@ header {
         margin-left: 3rem; }
       .hero-container .social-logs-container .social-logs i {
         font-size: 3.4rem;
-        transition: 0.2s ease-in-out; }
+        transition: 0.3s ease-in-out; }
       .hero-container .social-logs-container .social-logs i:hover {
         color: #66B6FF; }
 
@@ -188,6 +188,8 @@ header {
     background-color: #66B6FF;
     position: relative; }
 
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 .projects-container {
   margin: 5rem auto;
   max-width: 1200px;
@@ -202,13 +204,10 @@ header {
     opacity: 1 !important; }
   .projects-container .project {
     display: flex;
-    position: absolute;
-    right: -100%;
-    opacity: .1;
     transition: 0.3s ease-in-out;
     width: 100%;
     border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02); }
     .projects-container .project:nth-child(2), .projects-container .project:nth-child(3) {
       margin-bottom: 10rem; }
     .projects-container .project .info {
@@ -371,6 +370,7 @@ body .active {
   place-items: center;
   opacity: 1; }
 
+@use '../abstracts/variables';
 h1, h2, a {
   color: black; }
 

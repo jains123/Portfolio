@@ -16,6 +16,11 @@
     align-items: center;
 }
 
+@mixin flexbox-c {
+    display: flex;
+    justify-content: center;
+}
+
 @mixin flexbox-c-sa {
     display: flex;
     align-items: center;

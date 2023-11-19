@@ -1,3 +1,6 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
 .projects-container {
     margin: 5rem auto;
     max-width: 1200px;
@@ -17,13 +20,10 @@
 
     .project {
         @include flexbox;
-        position: absolute;
-        right: -100%;
-        opacity: .1;
         transition: 0.3s ease-in-out;
         width: 100%;
         border-radius: 20px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: $shadow;
 
         &:nth-child(2), &:nth-child(3) {
             margin-bottom: 10rem;
@@ -33,6 +33,7 @@
             flex: 1;
             padding: 1.5rem;
             margin: auto 0;
+
             h3 { 
                 margin-bottom: 1.75rem;
 
@@ -42,8 +43,7 @@
             }
             div {   
                 width: 100%;
-                @include flexbox;
-                justify-content: center;
+                @include flexbox-c;
 
                 button {
                     @include button;

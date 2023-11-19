@@ -7,6 +7,7 @@ $textCol: #262626;
 $darkPrimaryCol: #262626;
 $darkModeElements: hsl(209, 23%, 22%);
 $darkModeBackground: hsl(207, 26%, 17%);
+
 //FONTS
 $monts: 'Montserrat', sans-serif;  
 $outfit: 'Outfit', sans-serif;  
@@ -24,3 +25,15 @@ $smallScreen: 576px;
 $mediumScreen: 768px;
 $largeScreen: 992px;
 $extraLargeScreen: 1200px;
+
+//SHADOW
+$shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+
+//RADIUS
+$borderRadius: 10px;
+
+//MAX-WIDTH
+$maxWidth: 1400px;
+
+//TRANSITION
+$transition: 0.3s ease-in-out;

@@ -1,9 +1,9 @@
 @import "../abstracts/mixins.scss";
 
 .about-container {
-    max-width: 1400px;
+    max-width: $maxWidth;
     margin: 0 auto;
-    display: flex;
+    @include flexbox;
     align-content: stretch;
     align-items: center;
 
@@ -28,8 +28,6 @@
         }
 
         .skill-icons-container {
-
-            // height: 15rem;
 
             ul {
                 height: 100%;

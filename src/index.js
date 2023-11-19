@@ -28,6 +28,7 @@ burgerButton.addEventListener('click', () => {
 
 //DARK MODE 
 const body = document.querySelector('body')
+const footer = document.querySelector('.footer-container');
 const textElements = document.querySelectorAll('*:not(:empty)')
 const darkMode = document.querySelector('input')
 const icons = document.querySelectorAll('i')
@@ -51,6 +52,7 @@ function darkModeToggle(event) {
       let icon = icons[i]
       icon.classList.toggle('dark-mode-text')
     }
+    footer.classList.toggle('dark-mode-elements');
     localStorage.setItem('darkMode', 'true')    
   } else {
     body.classList.toggle('dark-mode-body')
@@ -65,6 +67,7 @@ function darkModeToggle(event) {
       let icon = icons[i];
       icon.classList.toggle('dark-mode-text');
     }
+    footer.classList.toggle('dark-mode-elements');
     localStorage.setItem('darkMode', false)
   } 
 } 
@@ -83,12 +86,6 @@ const darkModeStartUp = () => {
 }
 
 darkModeStartUp()
-
-const fadeIn = () => { 
-  projectsArray.forEach((project) => {
-    project.classList.toggle('project-on-load');
-  })
-}
 
 
 
