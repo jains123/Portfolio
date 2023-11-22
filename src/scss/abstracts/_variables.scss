@@ -2,6 +2,7 @@
 $primaryCol: #FBFBFB;
 $secondaryCol: #66B6FF;
 $textCol: #262626;
+$elements: #f1f1f1;
 
 //COLORS - DARK MODE
 $darkPrimaryCol: #262626;
@@ -27,7 +28,7 @@ $largeScreen: 992px;
 $extraLargeScreen: 1200px;
 
 //SHADOW
-$shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+$shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
 //RADIUS
 $borderRadius: 10px;

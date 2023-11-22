@@ -1,9 +1,9 @@
 @import "../abstracts/variables";
 
 .hero-container {
-    // border: solid 1px red;
     min-height: 700px;
     @include flexbox-c-c;
+    padding: 10%;
 
     h1 {
         margin-bottom: 3.5rem;

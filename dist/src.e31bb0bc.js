@@ -145,54 +145,30 @@ burgerButton.addEventListener('click', function () {
 var body = document.querySelector('body');
 var footer = document.querySelector('.footer-container');
 var textElements = document.querySelectorAll('*:not(:empty)');
-var darkMode = document.querySelector('input');
 var icons = document.querySelectorAll('i');
 var projects = document.getElementsByClassName('project');
 var projectsArray = Array.from(projects);
-function darkModeToggle(event) {
-  if (event.target.checked) {
-    body.classList.toggle('dark-mode-body');
-    for (var i = 0; i < textElements.length; i++) {
-      var element = textElements[i];
-      element.classList.toggle('dark-mode-text');
-    }
-    projectsArray.forEach(function (project) {
-      project.classList.toggle('dark-mode-elements');
-    });
-    for (var i = 0; i < icons.length; i++) {
-      var icon = icons[i];
-      icon.classList.toggle('dark-mode-text');
-    }
-    footer.classList.toggle('dark-mode-elements');
-    localStorage.setItem('darkMode', 'true');
-  } else {
-    body.classList.toggle('dark-mode-body');
-    for (var i = 0; i < textElements.length; i++) {
-      var _element = textElements[i];
-      _element.classList.toggle('dark-mode-text');
-    }
-    projectsArray.forEach(function (project) {
-      project.classList.toggle('dark-mode-elements');
-    });
-    for (var i = 0; i < icons.length; i++) {
-      var _icon = icons[i];
-      _icon.classList.toggle('dark-mode-text');
-    }
-    footer.classList.toggle('dark-mode-elements');
-    localStorage.setItem('darkMode', false);
+var toggle = document.getElementById('toggle');
+function darkModeToggle() {
+  body.classList.toggle('dark-mode-body');
+  for (var i = 0; i < textElements.length; i++) {
+    var element = textElements[i];
+    element.classList.toggle('dark-mode-text');
   }
+  projectsArray.forEach(function (project) {
+    project.classList.toggle('dark-mode-elements');
+  });
+  for (var i = 0; i < icons.length; i++) {
+    var icon = icons[i];
+    icon.classList.toggle('dark-mode-text');
+  }
+  footer.classList.toggle('dark-mode-elements');
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode-body'));
 }
-darkMode.addEventListener("change", darkModeToggle);
-var darkModeStartUp = function darkModeStartUp() {
-  if (localStorage.getItem('darkMode') == 'true') {
-    darkMode.checked = true;
-    darkMode.dispatchEvent(new Event('change'));
-  } else if (localStorage.getItem('darkMode') == 'false') {
-    darkMode.checked = false;
-    localStorage.setItem('darkMode', 'false');
-  }
-};
-darkModeStartUp();
+toggle.addEventListener('click', darkModeToggle);
+if (localStorage.getItem('darkMode') == 'true') {
+  darkModeToggle();
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -218,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56836" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50857" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
