@@ -32,7 +32,7 @@ html {
 }
 
 .dark-mode-elements {
-    background-color: $darkModeElements;
+    background-color: $darkModeElements !important;
     box-shadow: none !important;
 }
 

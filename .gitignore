@@ -8,9 +8,9 @@ firebase-debug.log*
 firebase-debug.*.log*
 node_modules/
 .firebaserc
-firebase
-public/
-/.cache
+.firebase/
+firebase.json
+.cache/
 # Firebase cache
 .firebase/
 
