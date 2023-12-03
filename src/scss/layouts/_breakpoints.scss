@@ -31,6 +31,14 @@
         flex-direction: column;
     }
 
+    .about-container {
+        flex-direction: column;
+
+        .about-bio-container {
+            width: 80%;
+        }
+    }
+
 }
 
 @media screen and (max-width: $smallScreen) {
@@ -88,7 +96,14 @@
     h1 {
         font-size: 6rem;
     }
+
+    .hero-container {
+        h1 {
+            font-size: 6rem !important;
+        }
+    }
 }
+
 @media screen and (max-width: 391px) {
     header {
         padding: 0 2rem;

@@ -12,12 +12,6 @@
         margin-bottom: 5rem;
     }
 
-    .project-on-load {
-        position: static !important;
-        right: 0 !important;
-        opacity: 1 !important;
-    }
-
     .project {
         @include flexbox;
         transition: 0.3s ease-in-out;

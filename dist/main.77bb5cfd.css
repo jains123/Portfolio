@@ -16,8 +16,7 @@ header {
       header ul li:nth-child(1) {
         margin-right: 6rem; }
       header ul li:nth-child(3) {
-        margin-left: 6rem;
-        margin-right: 6rem; }
+        margin-left: 6rem; }
       header ul li .switch {
         position: relative;
         display: inline-block;
@@ -202,17 +201,13 @@ header {
   flex-direction: column; }
   .projects-container h2 {
     margin-bottom: 5rem; }
-  .projects-container .project-on-load {
-    position: static !important;
-    right: 0 !important;
-    opacity: 1 !important; }
   .projects-container .project {
     display: flex;
     transition: 0.3s ease-in-out;
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    background-color: #f1f1f1; }
+    background-color: #FBFBFB; }
     .projects-container .project:nth-child(2), .projects-container .project:nth-child(3) {
       margin-bottom: 10rem; }
     .projects-container .project .info {
@@ -271,7 +266,11 @@ header {
     width: 90%;
     margin: 0 auto; }
   .project {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .about-container {
+    flex-direction: column; }
+    .about-container .about-bio-container {
+      width: 80%; } }
 
 @media screen and (max-width: 576px) {
   .hero-container {
@@ -301,7 +300,9 @@ header {
 
 @media screen and (max-width: 460px) {
   h1 {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+  .hero-container h1 {
+    font-size: 6rem !important; } }
 
 @media screen and (max-width: 391px) {
   header {
@@ -436,7 +437,7 @@ a {
 html {
   font-size: 62.5%; }
   html body {
-    background-color: #FBFBFB;
+    background-color: #f1f1f1;
     margin: 0 auto;
     overflow-x: hidden; }
 

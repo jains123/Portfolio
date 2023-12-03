@@ -117,83 +117,28 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/mob.js":[function(require,module,exports) {
+})({"data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.mobMenu = mobMenu;
-var mobItems = document.querySelector('.mob-menu');
-var burgerBack = document.querySelector('.burger-back');
-var burgerButton = document.querySelector('.burger');
-var title = document.querySelector('title');
-var l1 = document.querySelector('.line1');
-var l2 = document.querySelector('.line2');
-var l3 = document.querySelector('.line3');
-function mobMenu() {
-  l1.classList.toggle('rotate-top');
-  l2.classList.toggle('opaque');
-  l3.classList.toggle('rotate-bottom');
-  if (document.body.style.overflow === 'hidden') {
-    document.body.style.overflow = 'auto';
-  } else {
-    document.body.style.overflow = 'hidden';
+exports.projectsData = void 0;
+var projectsData = exports.projectsData = [{
+  "title": "Portfolio",
+  "description": {
+    "p1": "I created this portfolio to exhibit my expertise in front-end development and showcase some of the personal projects I’ve developed.",
+    "p2": "Crafting this portfolio provided me with ample opportunities to apply the skills and tools I've acquired."
+  },
+  "skills": "HTML - CSS - SCSS - JavaScript - Figma - Firebase - Responsive Development",
+  "live": "www.jamieainsworth.com",
+  "github": "https://github.com/jains123/portfolio",
+  "image": {
+    "src": "./images/output-onlinepngtools.png",
+    "alt": "A screenshot of the frontpage of my portfolio"
   }
-  burgerBack.classList.toggle('burger-back-active');
-  setTimeout(function () {
-    mobItems.classList.toggle('active');
-  }, 200);
-}
-},{}],"js/darkmode.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.darkModeToggle = darkModeToggle;
-var body = document.querySelector('body');
-var footer = document.querySelector('.footer-container');
-var textElements = document.querySelectorAll('*:not(:empty)');
-var icons = document.querySelectorAll('i');
-var projects = document.getElementsByClassName('project');
-var projectsArray = Array.from(projects);
-var toggle = document.getElementById('toggle');
-var mobileToggle = document.getElementById('mobileToggle');
-function darkModeToggle() {
-  body.classList.toggle('dark-mode-body');
-  for (var i = 0; i < textElements.length; i++) {
-    var element = textElements[i];
-    element.classList.toggle('dark-mode-text');
-  }
-  projectsArray.forEach(function (project) {
-    project.classList.toggle('dark-mode-elements');
-  });
-  for (var i = 0; i < icons.length; i++) {
-    var icon = icons[i];
-    icon.classList.toggle('dark-mode-text');
-  }
-  footer.classList.toggle('dark-mode-elements');
-  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode-body'));
-}
-},{}],"index.js":[function(require,module,exports) {
-"use strict";
-
-var _mob = require("./js/mob");
-var _darkmode = require("./js/darkmode");
-//IMPORTS
-
-var burgerButton = document.querySelector('.burger');
-
-//EVENT LISTENERS
-burgerButton.addEventListener('click', _mob.mobMenu);
-toggle.addEventListener('click', _darkmode.darkModeToggle);
-
-//CHECKS IF DARKMODE WAS ACTIVATED IN PREVIOUS VISIT
-if (localStorage.getItem('darkMode') == 'true') {
-  (0, _darkmode.darkModeToggle)();
-}
-},{"./js/mob":"js/mob.js","./js/darkmode":"js/darkmode.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+}];
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -218,7 +163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54878" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55124" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -362,5 +307,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","data.js"], null)
+//# sourceMappingURL=/data.c2b69d8e.js.map
