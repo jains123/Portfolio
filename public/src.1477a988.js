@@ -193,5 +193,13 @@ toggle.addEventListener('click', _darkmode.darkModeToggle);
 if (localStorage.getItem('darkMode') == 'true') {
   (0, _darkmode.darkModeToggle)();
 }
+var blob = document.querySelectorAll('.blob');
+for (var i = 0; i < blob.length; i++) {
+  var randomTop = Math.floor(Math.random() * 70);
+  var randomLeft = Math.floor(Math.random() * 70);
+  var div = blob[i];
+  div.style.top = "".concat(randomTop, "%");
+  div.style.left = "".concat(randomLeft, "%");
+}
 },{"./js/mob":"UZnh","./js/darkmode":"cQtx"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.450db64a.js.map
+//# sourceMappingURL=/src.1477a988.js.map

@@ -6,7 +6,7 @@
     @include flexbox;
     align-content: stretch;
     align-items: center;
-
+    z-index: 10;
     .about-title-container {
         @include flexbox-c-c;
         flex: 0.65;

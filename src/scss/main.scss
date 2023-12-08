@@ -36,8 +36,64 @@ html {
     box-shadow: none !important;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: $darkPrimaryCol;
+.circle {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    z-index: -100;
+    animation: rotate 40s infinite;
+
+    .blob {
+        height: 30%;
+        width: 35%;
+        left: 50%;
+        position: relative;
+        filter: blur(50px);
     }
+}
+
+@keyframes rotate {
+
+    25% {
+        transform: rotate3d(1, 2, 3, 90deg)
+        
+    }
+
+    50% {
+        transform: rotate3d(1, 2, 3, 180deg)
+    }
+
+    75% {
+        transform: rotate3d(1, 2, 3, 270deg)
+    }
+
+    100% {
+        transform: rotate3d(1, 2, 3, 360deg)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.background {
+    height: 50%;
+    width: 50%;
+    z-index: -100;
+    position: absolute;
+    border-radius: 50%;
+    background: $secondaryCol;
+    filter: blur(100px);
+    animation: 10s pulse infinite;
 }
