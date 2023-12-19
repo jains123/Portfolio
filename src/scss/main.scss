@@ -89,6 +89,8 @@ html {
 
 .background {
     height: 50%;
+    max-height: 300px;
+    max-width: 500px;
     width: 50%;
     z-index: -100;
     position: absolute;

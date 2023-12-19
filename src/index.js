@@ -11,14 +11,3 @@ toggle.addEventListener('click', darkModeToggle);
 if (localStorage.getItem('darkMode') == 'true') {
   darkModeToggle();
 }
-
-const blob = document.querySelectorAll('.blob')
-
-for (let i = 0; i < blob.length; i++) {
-
-  let randomTop = Math.floor(Math.random() * 70);
-  let randomLeft = Math.floor(Math.random() * 70);
-  let div = blob[i];
-  div.style.top = `${randomTop}%`;
-  div.style.left = `${randomLeft}%`;
-}
